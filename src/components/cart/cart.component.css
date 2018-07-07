@@ -1,0 +1,125 @@
+
+.cart-main{
+
+    display: flex;
+    flex-direction: row;
+
+    width: 40%;
+    height: fit-content;
+}
+
+.cart-body{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    background-color: #222;
+}
+
+.cart-products{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-header{
+    display: flex;
+    justify-content: space-around;
+    color: #428bca;
+    margin-top: 25px;
+}
+
+.cart-title{
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.cart-subTitle{
+    font-family: Monospace;
+    font-size: 15px;
+    margin: 0px 5px 0px 5px;
+}
+
+.cart-subHeader{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cart-product{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px 10px 0px;
+}
+
+.cart-product-container{
+    display: inline-flex;
+    width: 140px;
+}
+
+.cart-product-image{
+    
+    width: 60px;
+    height: 100%;
+
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cart-product-label{
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+    height: fit-content;
+    align-self: center;
+}
+
+.cart-detail{
+    width: 75px;
+    text-align: center;
+    font-family: Monospace;
+    font-size: 15px;
+    color: white;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+
+.cart-amount{
+    padding-right: 23px;
+}
+
+.cart-remove{
+
+    position: absolute;
+    width: 25px;
+    height: 25px;
+
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-image: url('../../assets/images/remove-from-cart.png');
+    margin-left: 10px;
+    cursor: pointer;
+    right: 16px;
+    margin-top: -2px;
+    align-self: center;
+}
+
+.cart-product:nth-of-type(odd) {
+    background-color:#363739;
+}
+    
+.cart-product:nth-of-type(even) {
+    background-color:#3d3f41;
+}

@@ -1,0 +1,97 @@
+
+.oblonges-main{
+
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+}
+
+.oblonges-body{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.oblonges-oblonges{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.oblonges-oblonge{
+
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: 1px solid lightgray;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 100px;
+}
+
+.oblonges-properties{
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
+
+.oblonges-actions{
+    display: flex;
+    flex-direction: row;
+
+    align-self: flex-end;
+    width: 40%;
+    direction: rtl;
+}
+
+.oblonges-prop{
+    margin-top: 10px;
+}
+
+.oblonges-name{
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 15px;
+    color: #428bca;
+}
+
+.oblonges-by{
+    font-family: Monospace;
+    font-size: 15px;
+}
+
+.oblonges-cost{
+    font-family: Monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.oblonges-image{
+
+    width: 20%;
+
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.oblonges-icon{
+
+    width: 25px;
+    height: 25px;
+
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin-left: 10px;
+    cursor: pointer;
+}
