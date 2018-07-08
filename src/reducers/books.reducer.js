@@ -4,10 +4,20 @@
  * The books reducer will always return an array of books no matter what
  * You need to return something, so if there are no books then just return an empty array
  * */
-  
 
-export default function () {
-    return [
+let trash = [];
+ 
+
+export default function (state = [], action) {
+    
+    switch(action.type){
+
+        case 'DELETE_BOOK':
+            trash.push(action.payload.id);
+        break;
+    }
+
+    let books = [
         {
             id: 5432,
             name: 'Lost Time',
@@ -73,4 +83,10 @@ export default function () {
             price: 115,
         },
     ]
+
+    return books.filter(item => {
+        if(trash.indexOf(item.id) == -1){
+            return item;
+        }
+    });
 }

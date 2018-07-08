@@ -24,9 +24,9 @@ class Cart extends Component {
         for(let i in items){
             let id = items[i].id;
             if(id in basket == false){
-            basket[id] = {product: items[i], amount: 1}
+                basket[id] = {product: items[i], amount: 1}
             } else {
-            basket[id].amount ++;
+                basket[id].amount ++;
             }
         }
         return Object.values(basket); //Objects to array collection...

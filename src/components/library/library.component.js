@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import {addBookToCart, removeBookFromCart} from '../../actions/index';
+import {addBookToCart, removeBookFromCart, deleteBook} from '../../actions/index';
 import {bindActionCreators} from 'redux';
 import './library.component.css';
 
@@ -38,9 +38,11 @@ class Library extends Component {
   }
 
   deleteItem = (id) => {
+
     let index = this.findItemIndexById(this.props.books, id);
     let book = this.props.books[index];
 
+    this.props.deleteBook(book);
   }
 
   render() {
@@ -64,13 +66,13 @@ function mapStateToProps(state){
   return {
     books: state.books,
     basket: state.basket,
-    shop: state.shop,
   }
 }
 
 function mapDispatchToProps(dispatch){
   return bindActionCreators({addBookToCart: addBookToCart,
-                             removeBookFromCart: removeBookFromCart,                           
+                             removeBookFromCart: removeBookFromCart,
+                             deleteBook: deleteBook,                           
                             }, dispatch);
 }
 

@@ -13,3 +13,9 @@ export const removeBookFromCart = (book) => {
     }
 }
 
+export const deleteBook = (book) => {
+    return {
+        type: 'DELETE_BOOK',
+        payload: book,
+    }
+}
