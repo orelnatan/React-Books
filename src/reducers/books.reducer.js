@@ -11,7 +11,7 @@ let trash = [];
 export default function (state = [], action) {
     
     switch(action.type){
-
+        
         case 'DELETE_BOOK':
             trash.push(action.payload.id);
         break;

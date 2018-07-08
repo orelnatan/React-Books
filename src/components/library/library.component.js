@@ -32,8 +32,9 @@ class Library extends Component {
   removeItem = (id) => {
     
     let index = this.findItemIndexById(this.props.books, id);
-    let book = this.props.books[index];
-
+    let book = {};
+    
+    book = index != -1 ? this.props.books[index] : {id: id};
     this.props.removeBookFromCart(book);
   }
 
