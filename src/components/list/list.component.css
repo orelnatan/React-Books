@@ -1,13 +1,13 @@
 
-.oblonges-main{
+.list-main{
 
     display: flex;
     flex-direction: row;
 
-    width: 50%;
+    width: 100%;
 }
 
-.oblonges-body{
+.list-body{
 
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-.oblonges-oblonges{
+.list-list{
 
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     width: 100%;
 }
 
-.oblonges-oblonge{
+.list-item{
 
     display: flex;
     flex-direction: row;
@@ -35,14 +35,14 @@
     height: 100px;
 }
 
-.oblonges-properties{
+.list-properties{
     display: flex;
     flex-direction: column;
 
     width: 40%;
 }
 
-.oblonges-actions{
+.list-actions{
     display: flex;
     flex-direction: row;
 
@@ -51,29 +51,29 @@
     direction: rtl;
 }
 
-.oblonges-prop{
+.list-prop{
     margin-top: 10px;
 }
 
-.oblonges-name{
+.list-name{
     font-family: fantasy;
     font-style: italic;
     font-size: 15px;
     color: #428bca;
 }
 
-.oblonges-by{
+.list-by{
     font-family: Monospace;
     font-size: 15px;
 }
 
-.oblonges-cost{
+.list-cost{
     font-family: Monospace;
     font-size: 15px;
     font-weight: bold;
 }
 
-.oblonges-image{
+.list-image{
 
     width: 20%;
 
@@ -83,7 +83,7 @@
     background-size: contain;
 }
 
-.oblonges-icon{
+.list-icon{
 
     width: 25px;
     height: 25px;

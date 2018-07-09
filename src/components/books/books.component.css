@@ -1,0 +1,16 @@
+
+.books-main{
+
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+}
+
+.books-body{
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
