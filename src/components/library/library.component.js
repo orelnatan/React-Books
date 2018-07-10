@@ -18,7 +18,7 @@ class Library extends Component {
         <div className = 'library-main' >
            <div className = 'library-body' >
               <Books  />
-
+              <Cart />
            </div>
         </div>
     );

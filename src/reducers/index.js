@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
 import BooksReducer from './books.reducer.js';
-import BasketReducer from './basket.reducer.js';
+import CartReducer from './cart.reducer';
 
 /*
  * We combine all reducers into a single object before updated data is dispatched (sent) to store
@@ -9,7 +9,7 @@ import BasketReducer from './basket.reducer.js';
 
 const allReducers = combineReducers({
     books: BooksReducer,
-    basket: BasketReducer,
+    cart: CartReducer,
 });
 
 export default allReducers

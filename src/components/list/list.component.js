@@ -2,11 +2,21 @@
 import React, { Component } from 'react';
 import './list.component.css';
 
-class List extends Component {
+export class List extends Component {
   
   actions = [
-    {label: 'Add to cart', id: 432, image: require('../../assets/images/add-to-cart.png'), action: (id) => {this.addToCart(id)}},
-    {label: 'Delete item', id: 321, image: require('../../assets/images/remove-from-cart.png'), action: (id) => {this.deleteItem(id)}}
+    {
+     label: 'Add to cart', 
+     id: 432, 
+     image: require('../../assets/images/add-to-cart.png'), 
+     action: (id) => {this.addToCart(id)}
+    },
+    {
+      label: 'Delete item', 
+      id: 321, 
+      image: require('../../assets/images/remove-from-cart.png'), 
+      action: (id) => {this.deleteItem(id)}
+    },
   ];
 
 

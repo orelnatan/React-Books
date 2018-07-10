@@ -4,19 +4,26 @@ import {deleteBook} from '../../actions/index';
 import {bindActionCreators} from 'redux';
 import {Books} from '../components/books/books.component';
 
-const mapStateToProps = (state) => {
-    console.log('dddd')
+export class BooksContainer extends React.Component{
+
+    constructor(state){
+        super(state)
+        console.log('dddd')
+    }
+
+}
+
+function mapStateToProps(state){
     return {
         books: state.books,
     }
 }
-
-const mapDispatchToProps = (dispatch) => {
-    return bindActionCreators({deleteBook: deleteBook,                           
-                              }, dispatch);
+  
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({
+  
+                                deleteBook: deleteBook,                           
+                                }, dispatch);
 }
 
-export const Books = connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(Books)
+export default connect(mapStateToProps, mapDispatchToProps)(Books);
