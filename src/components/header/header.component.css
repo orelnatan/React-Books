@@ -1,0 +1,50 @@
+
+.header-main{
+    position: fixed;
+    width: 100%;
+    background-color: #eee;
+}
+
+.header-body{
+    display: inline;
+    width: fit-content;
+}
+
+.header-categories{
+    display: flex;
+    padding: 5px 40px 5px 40px;
+}
+
+.header-category{
+    display: flex;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+
+.header-category-active{
+    text-decoration: underline;
+}
+
+.header-category:hover{
+    text-decoration: underline;
+}
+
+.header-category-icon{
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+}
+
+.header-category-label{
+    display: flex;
+    margin: 0px 5px 0px 5px;
+}
+
+.header-category-name{
+    align-self: center;
+    font-family: fantasy;
+    font-size: 15px;
+}

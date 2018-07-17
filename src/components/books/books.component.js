@@ -9,7 +9,6 @@ import {List} from '../list/list.component';
 
 class Books extends Component {
 
-  
   addToCart = (id) => {
     let book = this.props.books.find(item => item.id == id);
     this.props.addBookToCart(book);

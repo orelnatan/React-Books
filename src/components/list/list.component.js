@@ -10,13 +10,17 @@ export class List extends Component {
      id: 432, 
      image: require('../../assets/images/add-to-cart.png'), 
      action: (id) => {this.addToCart(id)}
-    },
-    {
-      label: 'Delete item', 
+    }, {
+      label: 'Send to trash', 
       id: 321, 
-      image: require('../../assets/images/remove-from-cart.png'), 
+      image: require('../../assets/images/trash.png'), 
       action: (id) => {this.deleteItem(id)}
-    },
+    }, {
+      label: 'Add as favorite', 
+      id: 654, 
+      image: require('../../assets/images/favorite.png'), 
+      action: (id) => {}
+    }, 
   ];
 
 
